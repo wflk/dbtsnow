@@ -1,1 +1,1 @@
-{{ log_query_results() }}
+{{ run_hardcoded_query() }}
