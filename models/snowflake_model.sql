@@ -1,1 +1,1 @@
-select $1 FROM @~;
+select $1 FROM @~
