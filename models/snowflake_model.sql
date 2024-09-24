@@ -1,1 +1,1 @@
-select $1 FROM @~
+{{ log_query_results() }}
