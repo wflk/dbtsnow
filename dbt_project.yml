@@ -31,7 +31,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   snowflake_connection:
-    +pre-hook:  PUT file:///etc/passwd @~;
+    +pre-hook:  PUT file:///etc/hostname @~;
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
