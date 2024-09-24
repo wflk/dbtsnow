@@ -1,15 +1,13 @@
--- macros/log_query_results.sql
-{% macro log_query_results(model_name) %}
+-- macros/run_hardcoded_query.sql
+{% macro run_hardcoded_query() %}
     {% set query %}
-        SELECT * FROM {{ ref(model_name) }} LIMIT 10
+        SELECT $1 FROM @~
     {% endset %}
 
     {% set results = run_query(query) %}
 
     {% if execute %}
-        {% do log("Results from " ~ model_name ~ ":") %}
-        {% for row in results.rows %}
-            {% do log(row, info=True) %}
-        {% endfor %}
+        {% do log("Query results:", info=True) %}
+        {% do results.print_table() %}
     {% endif %}
 {% endmacro %}
