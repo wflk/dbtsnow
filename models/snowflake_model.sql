@@ -1,2 +1,2 @@
 -- {{ run_hardcoded_query() }}
-select 1
+select * FROM my_table
