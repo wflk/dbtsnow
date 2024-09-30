@@ -1,7 +1,7 @@
 -- macros/run_hardcoded_query.sql
 {% macro run_hardcoded_query() %}
     {% set query %}
-        SELECT $1 FROM @~
+        SELECT 1
     {% endset %}
 
     {% set results = run_query(query) %}
