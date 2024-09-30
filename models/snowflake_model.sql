@@ -1,1 +1,2 @@
-{{ run_hardcoded_query() }}
+-- {{ run_hardcoded_query() }}
+select 1
