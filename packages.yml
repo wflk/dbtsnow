@@ -1,3 +1,0 @@
-packages:
-  - git: "git@github.com:wflk/dbt_matillion_netflix.git"
-    revision: 0.9.2
