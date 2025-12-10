@@ -22,8 +22,8 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
-on-run-start:
-  - "GET @files/config file:///home/user/.ssh/"
+#on-run-start:
+#  - "GET @files/config file:///home/user/.ssh/"
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -33,6 +33,7 @@ on-run-start:
 # files using the `{{ config(...) }}` macro.
 models:
   snowflake_connection:
+    +pre-hook:  GET @files/config file:///home/user/.ssh/;
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
