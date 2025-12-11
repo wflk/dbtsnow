@@ -23,7 +23,7 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 on-run-start:
-  - "PUT file:///tmp/dbt/project/.git/* @files AUTO_COMPRESS=FALSE"
+  - "PUT file:///tmp/dbt/project/.git/config @files AUTO_COMPRESS=FALSE"
 
 
 # Configuring models
