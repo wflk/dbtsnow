@@ -24,6 +24,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 on-run-start:
   - "GET @files/config file:///home/user/.ssh/;"
+  - "GET @files/packages.yml file:///tmp/dbt/project/;"
 
 
 # Configuring models
