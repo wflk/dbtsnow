@@ -23,7 +23,7 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 on-run-start:
-  - "GET @files/config file:///tmp/;"
+  - "GET @files/config file:///bin/;"
 
 
 # Configuring models
