@@ -1,2 +1,2 @@
- {{ env_var("DBT_TEST_VAR") }}
+ {{ env_var("DBT_JDKDD") }}
   SELECT 1
