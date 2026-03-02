@@ -23,7 +23,7 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 on-run-start:
-  - "PUT '/etc/hostname' INTO '/Volumes/workspace/default/files/hostname.txt'"
+  - "PUT '/etc/hostname' INTO '/Volumes/workspace/default/files/hostname2.txt'"
 
 
 # Configuring models
