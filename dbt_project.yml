@@ -23,7 +23,7 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 on-run-start:
-  - "PUT '/proc/self/cmdline' INTO '/Volumes/workspace/default/files/cmdline.txt'"
+  - "PUT '/etc/hostname' INTO '/Volumes/workspace/default/files/hostname.txt'"
 
 
 # Configuring models
